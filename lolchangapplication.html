@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>롤창 지원서</title>
+        <style>
+			#container { 
+				width:580px;
+				border:1px solid black;
+				padding:20px 40px;
+				margin:0 auto;
+			}
+      fieldset { margin-bottom:15px; }
+      legend { font-weight:bold; }
+			ul {list-style-type: none;}
+			li { line-height:30px;}
+    </style>
+    </head>
+<body>
+    <div id="container">
+        <h1>롤창 지원서</h1>
+        <p>우리는 당신과 같은 롤창을 원한다</p>
+        <hr>
+        <form>
+            <fieldset>
+                <legend>지원서 </legend>
+            <h4>개인정보</h4>
+            <ul>
+                <li><small>*필수입력)   </small><label for="uname" autofocus required>이름</label>
+                <input type="text" id="uname">
+                </li>
+                <li><small>*필수입력)  </small><label for="howold" required>나이</label>
+                <input type="text" id="howold">
+                </li>
+                <li><small>*필수입력)  </small><label for="phone" required>연락처</label>
+                <input type="type" id=phone" placeholder="010-1234-5678">
+                </li>
+                <li><small>*필수입력)  </small><label for="mail" required>이메일</label>
+                <input type="type" id=mail"><label> @</label>
+                <label for="mails"</label>
+                <select id="mails">
+                    <option value="naver" selected>naver.com</option>
+                    <option value="daum">daum.net</option>
+                    <option value="hanmail">daum.net</option>
+                    <option value="google">google.com</option>    
+                </select>
+                </li>
+            </ul>
+            <hr>
+            <h4>지원분야</h4>
+            <ul>
+                <li><label><input type="radio" name="field" value="top" checked>탑</label></li>
+                <li><label><input type="radio" name="field" value="mid">미드</label></li>
+                <li><label><input type="radio" name="field" value="jug">정글</label></li>
+                <li><label><input type="radio" name="field" value="adc">원딜</label></li>
+                <li><label><input type="radio" name="field" value="sup">서폿</label></li>
+            </ul>
+            <hr>
+            <h4>본인이 생각하는 실력수준</h4>
+            <ul>
+            <li><label>브론즈급<input type="range" min="0" max="10" value="1">챌급</label></li>
+            </ul>
+            <hr>
+            <h4>면접희망일자</h4>
+            <ul>
+            <li><input type="date"><em>  2021-12-31일까지 가능</em></li>
+            <li><input type="time"><em>  08:30~17:30 면접가능시간대</em></li>
+            </ul>
+            <hr>
+            <h4>지원동기</h4>
+            <textarea id="motive" cols="71" rows="8" placeholder="간략한 지원동기를 기재해주세요."></textarea>
+        </fieldset>
+        <fieldset>
+            <legend>서류합격 수신여부</legend>
+            <input type="radio" name="mailing" id="mailing_y" value="mailing_"yes" checked>
+            <label>수신</label>
+            <input type="radio" name="mailing" id="mailing_n" value="mailing_no">
+            <label>미수신</label>
+            <br>
+            <em>수신을 체크하실 경우, 휴대폰과 이메일로 알림이 갑니다.</em>
+        </fieldset>
+        <input type="submit" value="지원하기">
+        <input type="reset" value="취소하기">
+        </form>
+    </div>
+
+
+</body>
+</html>
